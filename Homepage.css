@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:boarder-box;
+}
+
+.mainimage{
+    height:100vh;
+    background:url(kisshorse.jpg);
+    background-size:cover;
+    position:relative
+}
+
+.hero_title{
+    text-align:center;
+    padding-top:0px;
+    padding-bottom:100px;
+    font-family:'Abril Fatface', cursive;
+    font-size:75px;
+    font-weight:regular;
+    color:peachpuff;
+}
+
+.navbar{
+    display:flex;
+    justify-content:center;
+    background-color:peachpuff;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    margin:20px 0px;
+}
+
+.navbar ul li{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.1rem;
+    font-weight:bold;
+}
+
+.navbar ul li a{
+    text-decoration:overline;
+    color:white;
+    padding:8px 25px;
+    transition:all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color:white;
+    color:black;
+    box-shadow:0 0 10px white, 0 0 10px white, 0 0 15px white;
+    font-weight:bold;
+}
+
+#home{
+    display:flex;
+    flex-direction:column;
+    background-color:lightskyblue;
+    height:840px;
+    justify-content:center;
+    align-items: center;
+    color:white;
+}
+
+#home::before{
+    content:"horsey";
+    position:absolute;
+    top:0;
+    background:url('kisshorse.jpg') no-repeat center center/cover;
+    height:900px;
+    width:100%;
+    z-index:-1;
+    opacity:10%;
+}
+
+.main{
+    display:flex;
+    flex-direction:column;
+    boarder:1px solid white;
+    align-items:center;
+    position:absolute;
+    top:30%;
+    right: 10%;
+}
+
+.headings{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:3rem;
+    text-align:center;
+    margin:40px 0px;
+}
+
+.btn{
+    text-align:center;
+    padding:10px 35px;
+    background-color:transparent;
+    boarder:1px solid white;
+    color:white;
+    outline:none;
+    transition:.6s ease;
+}
+
+.btn:hover{
+    curser:pointer;
+    background-color:white;
+    color:darkblue;
+    box-shadow:0 0 5px white, 0 0 10px white;
+    font-weight:bold;
+}
